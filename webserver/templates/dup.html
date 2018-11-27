@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../static/default.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,700">
+  	<link rel="stylesheet" href="../static/style.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="wrapper" class="wrapper">
+	  <header class="header htmleaf-header">
+			<h1>Welcome To Cohero </h1>
+			<!-- <div class="htmleaf-links">
+				<a class="htmleaf-icon icon-htmleaf-home-outline" href="http://www.htmleaf.com/" title="jQuery之家" target="_blank"></a>
+				<a class="htmleaf-icon icon-htmleaf-arrow-forward-outline" href="http://www.htmleaf.com/html5/html5muban/201508022345.html" title="返回下载页" target="_blank"></a>
+			</div> -->
+		</header>
+	  <main>
+	    <div class="container">
+	      <section>
+	        <h1>You are already in this Event!</h1>
+	        <div id="github-icons"></div>
+              <!--<div> Welcome  {{n}} </div>-->
+              <!-- <div>
+                
+              </div> -->
+	      </section>
+	    </div>
+	  </main>
+	</div><!-- /wrapper -->
+
+	<button id="mm-menu-toggle" class="mm-menu-toggle">Toggle Menu</button>
+	<nav id="mm-menu" class="mm-menu">
+	  <div class="mm-menu__header">
+	    <h2 class="mm-menu__title">{{n}}</h2>
+	  </div>
+	    <li class="mm-menu__item">
+	      <a class="mm-menu__link" href="/">
+	        <span class="mm-menu__link-text"><i class="md md-home"></i> Home</span>
+	      </a>
+	    </li>
+	  <ul class="mm-menu__items">
+	    <li class="mm-menu__item">
+	      <a class="mm-menu__link" href="/profile">
+	        <span class="mm-menu__link-text"><i class="md md-home"></i> Profile</span>
+	      </a>
+	    </li>
+	    <li class="mm-menu__item">
+	      <a class="mm-menu__link" href="/post">
+	        <span class="mm-menu__link-text"><i class="md md-home"></i> Post</span>
+	      </a>
+	    </li>
+	    <li class="mm-menu__item">
+	      <a class="mm-menu__link" href="/search">
+	        <span class="mm-menu__link-text"><i class="md md-person"></i> Search</span>
+	      </a>
+	    </li>
+	    <li class="mm-menu__item">
+	      <a class="mm-menu__link" href="/friends">
+	        <span class="mm-menu__link-text"><i class="md md-inbox"></i> Friends</span>
+	      </a>
+	    </li>
+	    <li class="mm-menu__item">
+	      <a class="mm-menu__link" href="/blacklist">
+	        <span class="mm-menu__link-text"><i class="md md-favorite"></i> Blacklist</span>
+	      </a>
+	    </li>
+	    <li class="mm-menu__item">
+	      <a class="mm-menu__link" href="/interest">
+	        <span class="mm-menu__link-text"><i class="md md-settings"></i> Interest</span>
+	      </a>
+	    </li>
+	    <li class="mm-menu__item">
+	      <a class="mm-menu__link" href="#">
+	        <span class="mm-menu__link-text"><i class="md md-settings"></i>
+				<form action="/logout">
+					<input type="submit" value="Log Out" />
+				</form>
+			</span>
+	      </a>
+	    </li>
+	  </ul>
+	</nav><!-- /nav -->
+
+	<script src="../static/production/materialMenu.min.js"></script>
+	<script>
+	  var menu = new Menu;
+	</script>
+</body>
+</html>
+  <!--<h1>Events: </h1>-->
+  <!--<div> Welcome  {{n}} </div>-->
+  <!--<div>-->
+    <!--{% for n in data %}-->
+    <!--<div>{{n}}</div>-->
+    <!--{% endfor %}-->
+  <!--</div>-->
+
+<!--<form action="/logout">-->
+    <!--<input type="submit" value="Log Out" />-->
+<!--</form>-->
+

@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="/static/style.css" type="text/css">
+{% block body %}
+{% if session['registered'] %}
+<p>You're registered already!</p>
+{% else %}
+
+
+<form  action = '/createUser' method="POST">
+	<div class="login">
+		<div class="login-screen">
+			<div class="app-title">
+				<h1>Register</h1>
+			</div>
+
+			<div class="login-form">
+				<div class="control-group">
+				<input type="text" class="login-field" value="" placeholder="username" name="username" >
+				<!-- <label class="register-field-icon fui-user" for="login-name"></label> -->
+				<label class="login-field-icon fui-user" for="login-name"></label>
+				</div>
+
+				<div class="control-group">
+						<input type="text" class="login-field" value="" placeholder="birthday(YYYY-MM-DD)" name="birthday" >
+						<!-- <label class="register-field-icon fui-user" for="login-name"></label> -->
+						<label class="login-field-icon fui-user" for="login-name"></label>
+						</div>
+
+				<div class="control-group">
+				<input type="password" class="login-field" value="" placeholder="password" name="password">
+				<label class="login-field-icon fui-lock" for="login-pass"></label>
+				<!-- <label class="register-field-icon fui-lock" for="login-pass"></label> -->
+				</div>
+
+                <input type="submit" value="Register" class="btn btn-primary btn-large btn-block" >
+			    <br>
+			</div>
+		</div>
+	</div>
+</form>
+
+{% endif %}
+{% endblock %}
